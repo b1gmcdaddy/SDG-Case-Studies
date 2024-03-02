@@ -1,7 +1,12 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 
 const SDG1 = () => {
-  return <div>SDG1</div>;
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
 };
 
 export default SDG1;
