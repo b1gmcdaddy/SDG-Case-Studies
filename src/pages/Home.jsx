@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import SDG1 from "../assets/SDG1.png";
 import SDG2 from "../assets/SDG2.png";
+import { Link } from "react-router-dom";
+import "../App.css";
 
 const Home = () => {
   return (
@@ -19,8 +21,12 @@ const Home = () => {
           laoreet dignissim.
         </p>
         <div className="flex mt-10">
-          <img src={SDG1} alt="Image 1" className="w-1/2 mr-4" />
-          <img src={SDG2} alt="Image 2" className="w-1/2" />
+          <Link to="/GoodHealthSDG" className="w-1/2 mr-4">
+            <img src={SDG1} />
+          </Link>
+          <Link to="/QualityEducSDG" className="w-1/2">
+            <img src={SDG2} />
+          </Link>
         </div>
       </div>
     </>
