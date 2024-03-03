@@ -10,22 +10,28 @@ const Home = () => {
     <>
       <Navbar />
       <div className="container mx-auto mt-10 px-4">
-        <h1 className="text-3xl font-bold mb-4">
+        <h1 className="text-3xl font-bold mb-4 text-white">
           <br />
-          Welcome to Our Website
+          Choose the SDG Case Study to View
         </h1>
-        <p className="text-lg">
+        <p className="text-lg text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
           accumsan orci a odio facilisis, et aliquam arcu convallis. Fusce
           tempus augue vel est fermentum molestie. Morbi ut mauris nec sapien
           laoreet dignissim.
         </p>
-        <div className="flex mt-10">
+        <div className="md:flex mt-10">
           <Link to="/GoodHealthSDG" className="w-1/2 mr-4">
-            <img src={SDG1} />
+            <img
+              src={SDG1}
+              className="border-double border-8 border-white-500 rounded-lg"
+            />
           </Link>
           <Link to="/QualityEducSDG" className="w-1/2">
-            <img src={SDG2} />
+            <img
+              src={SDG2}
+              className="border-double border-8 border-white-500 rounded-lg"
+            />
           </Link>
         </div>
       </div>

@@ -1,36 +1,39 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   const Navlinks = [
     { name: "SDG1", path: "/GoodHealthSDG" },
     { name: "SDG2", path: "/QualityEducSDG" },
   ];
 
-  const [openMenu, setOpenMenu] = useState(false);
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   return (
-    <nav className="w-full fixed top-0 left-0">
-      <div className="md:flex items-center md:mx-64 justify-between py-4 md:px-10 px-7">
-        <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins]">
-          <Link to="/" className="text-3xl mr-1 pt-2">
+    <nav className="w-full fixed top-0 left-0 shadow-2xl bg-slate-300">
+      <div className="md:flex items-center md:mx-64 justify-between py-5 md:px-10 px-7">
+        <div className="font-bold text-2xl cursor-pointer flex items-center font-[Helvetica]">
+          <Link to="/" className="text-2xl mr-1 pt-2">
             Gr7 SDGs CaseStudy
           </Link>
         </div>
-        <div
-          onClick={() => setOpenMenu(!openMenu)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
-        >
-          <FontAwesomeIcon icon={openMenu ? faXmark : faBars} />
+        <div className="absolute right-8 top-7 cursor-pointer md:hidden">
+          <FontAwesomeIcon
+            icon={showMenu ? faTimes : faBars}
+            className="text-2xl cursor-pointer"
+            onClick={toggleMenu}
+          />
         </div>
-
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] 
-        left-0 top-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-          openMenu ? "top-20" : "top-[-490px]"
-        }`}
+          className={`md:flex md:pb-0 md:w-auto w-full md:pl-0 pl-9 transition-all duration-500 ease-in ${
+            showMenu ? "block" : "hidden md:block"
+          }`}
         >
           {Navlinks.map((link, index) => (
             <li key={index} className="md:ml-8 uppercase xs:my-2 md:my-0 my-7">
@@ -47,4 +50,5 @@ const Navbar = () => {
     </nav>
   );
 };
+
 export default Navbar;
