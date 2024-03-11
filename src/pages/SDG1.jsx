@@ -3,20 +3,19 @@ import Navbar from "../components/Navbar";
 import jebron from "../assets/jebron.jpg";
 import empathymap from "../assets/empathymap.jpg";
 import dev from "../assets/dev.jpg";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Accordion from "../components/Accordion";
 
 const SDG1 = () => {
-  const [showPersona, setShowPersona] = useState(false);
-  const [showEmpathyMap, setShowEmpathyMap] = useState(false);
-
-  const togglePersona = () => {
-    setShowPersona(!showPersona);
-  };
-
-  const toggleEmpathyMap = () => {
-    setShowEmpathyMap(!showEmpathyMap);
-  };
+  const accordionItems = [
+    {
+      title: "Persona",
+      image: `${jebron}`,
+    },
+    {
+      title: "Empathy Map",
+      image: `${empathymap}`,
+    },
+  ];
 
   return (
     <>
@@ -33,132 +32,13 @@ const SDG1 = () => {
           laoreet dignissim.
         </p>
 
-        <div className="md:mt-16 xs:mt-10">
-          {/*INTRODUCTION SECTION*/}
-          <h2 className="text-2xl font-bold text-white md:inline">
-            INTRODUCTION
-          </h2>
-          <div className="border-solid border-2 border-grey-500 bg-slate-300 rounded-3xl mt-3 px-12 py-5 shadow-lg shadow-green-300">
-            <ul className="list-disc text-black md:text-justify md:text-md">
-              <li>
-                <b>Purpose:</b> Provide a brief overview of the design project,
-                including the problem or challenge addressed, the stakeholders
-                involved, and the overall goals.
-              </li>
-              <li>
-                <b>Content:</b> Introduce the context of the project and set the
-                stage for the reader to understand the subsequent sections.
-              </li>
-            </ul>
-            <p className="text-black md:text-justify mt-5 md:text-md">
-              The design project that our team proposed revolves around
-              addressing the challenges and issues situated in the Sustainable
-              Development Goal 3: “Good Health and Well-Being.”. The team’s goal
-              is to proactively innovate and systematically create a solution
-              that will truly enhance the overall health and well-being of
-              individuals that are currently facing health-related issues. As
-              food and delicacies become more diverse, we humans become too
-              complacent of what we consume. This, in turn, creates a problem
-              wherein we eat more than what we should, consume more calories
-              than what is recommended. Our team envisions that this design
-              project will cater to the needs of those individuals who are
-              struggling in losing or gaining weight.
-            </p>
-          </div>
-        </div>
-
-        <div className="md:mt-14 xs:mt-10">
-          {/*PROJECT BACKGROUND SECTION*/}
-          <h2 className="text-2xl font-bold text-white flex justify-end">
-            PROJECT BACKGROUND
-          </h2>
-          <div className="border-solid border-2 bg-green-900 rounded-3xl mt-3 px-12 py-5 shadow-lg shadow-slate-300">
-            <ul className="list-disc text-white md:text-justify md:text-md">
-              <li>
-                <b>Purpose:</b> Offer more detailed information about the
-                background and context of the project.
-              </li>
-              <li>
-                <b>Content:</b> Discuss any relevant industry trends, market
-                conditions, or user behaviors that influenced the project.
-                Provide a clear understanding of why the project was initiated.
-              </li>
-            </ul>
-            <p className="text-white md:text-justify mt-5 md:text-md">
-              The design project that our team envisions, provides a profound
-              and comprehensive understanding of the factors and why they came
-              to be, that led to the initial planning of the project. Factors
-              such as industry trends, market conditions, and ultimately, user
-              behaviors have helped the team in wholeheartedly understanding the
-              necessary actions and solutions that may mitigate and even prevent
-              such challenges in the chosen field. The team had thoroughly
-              researched certain user behaviors that had an increasing
-              significance on health and well-being. The prevalence of
-              technology and the increasing variety of meals has influenced
-              people to have sedentary lifestyles, such lifestyles heavily
-              impact their overall health. On top of that, specific user
-              challenges such as limited time constraints, causes them to desire
-              less of having a fitness-oriented lifestyle. However, some users
-              tend to exemplify the desire to prioritize health despite time
-              constraints due to high demand work environments. In light of
-              this, the team gained valuable insight on capitalizing this
-              behavior and carefully thought of innovative solutions using
-              technology. The rise of health-conscious consumers, coupled with
-              the advancements in technology, provided a strong ground for our
-              project.
-            </p>
-          </div>
-        </div>
-
-        <div className="mt-10">
-          {/*USER PERSONA SECTION*/}
-          <h2 className="text-2xl font-bold mb-4 text-white md:inline">
-            User Persona
-          </h2>
-          <button
-            onClick={togglePersona}
-            className="text-white md:ml-7 bg-green-700 px-2 py-2 rounded-xl text-sm"
-          >
-            <FontAwesomeIcon icon={faArrowDown} className="mr-2" />
-            SHOW DESCRIPTION
-          </button>
-          {showPersona && (
-            <p className="text-white text-opacity-75 mt-3 text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              accumsan orci a odio facilisis, et aliquam arcu convallis. Fusce
-              tempus augue vel est fermentum molestie. Morbi ut mauris nec
-              sapien laoreet dignissim.
-            </p>
-          )}
-          <img src={jebron} className="mt-5"></img>
-        </div>
-
-        <div className="mt-10">
-          {/*EMPATHY MAP SECTION*/}
-          <h1 className="text-2xl font-bold mb-4 text-white md:inline">
-            Empathy Map
-          </h1>
-          <button
-            onClick={toggleEmpathyMap}
-            className="text-white md:ml-7 bg-green-700 px-2 py-2 rounded-xl text-sm"
-          >
-            <FontAwesomeIcon icon={faArrowDown} className="mr-2" />
-            SHOW DESCRIPTION
-          </button>
-          {showEmpathyMap && (
-            <p className="text-white text-opacity-75 mt-3 text-justify">
-              This is the Empathy Map!!
-            </p>
-          )}
-          <img src={empathymap} className="mt-5"></img>
-        </div>
-        <div className="mx-auto mt-10 text-center">
+        <div className="mx-auto mt-14 text-center">
           {/*RESEARCHERS SECTION*/}
-          <h1 className="text-white md:text-3xl sm:text-2xl tracking-wide text-xl font-bold">
+          <h1 className="text-white md:text-2xl sm:text-xl tracking-wide text-xl font-bold">
             MEET THE RESEARCHERS
           </h1>
-          <div className="w-[100px] h-[4px] mx-auto bg-green-700 rounded-md mt-4 mb-3"></div>
-          <p className="text-white md:mt-2 md:pt-2 md:text-xl xs:text-base">
+          <div className="w-[100px] h-[4px] mx-auto bg-green-700 rounded-md mt-3 mb-3"></div>
+          <p className="text-white md:text-lg xs:text-base">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
             dapibus leonec.
           </p>
@@ -197,6 +77,163 @@ const SDG1 = () => {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="md:mt-8 xs:mt-10">
+          {/*INTRODUCTION SECTION*/}
+          <h2 className="text-2xl font-bold text-white">INTRODUCTION</h2>
+          <div className="border-solid border-2 border-grey-500 bg-slate-300 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-green-300">
+            <ul className="list-disc text-black md:text-justify md:text-md">
+              <li>
+                <b>Purpose:</b> Provide a brief overview of the design project,
+                including the problem or challenge addressed, the stakeholders
+                involved, and the overall goals.
+              </li>
+              <li>
+                <b>Content:</b> Introduce the context of the project and set the
+                stage for the reader to understand the subsequent sections.
+              </li>
+            </ul>
+            <p className="text-black md:text-justify mt-5 md:text-md">
+              The design project that our team proposed revolves around
+              addressing the challenges and issues situated in the Sustainable
+              Development Goal 3: “Good Health and Well-Being.”. The team’s goal
+              is to proactively innovate and systematically create a solution
+              that will truly enhance the overall health and well-being of
+              individuals that are currently facing health-related issues. As
+              food and delicacies become more diverse, we humans become too
+              complacent of what we consume. This, in turn, creates a problem
+              wherein we eat more than what we should, consume more calories
+              than what is recommended. Our team envisions that this design
+              project will cater to the needs of those individuals who are
+              struggling in losing or gaining weight.
+            </p>
+          </div>
+        </div>
+
+        <div className="md:mt-8 xs:mt-10">
+          {/*PROJECT BACKGROUND SECTION*/}
+          <h2 className="text-2xl font-bold text-white flex justify-end">
+            PROJECT BACKGROUND
+          </h2>
+          <div className="border-solid border-2 bg-green-900 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-slate-300">
+            <ul className="list-disc text-white md:text-justify md:text-md">
+              <li>
+                <b>Purpose:</b> Offer more detailed information about the
+                background and context of the project.
+              </li>
+              <li>
+                <b>Content:</b> Discuss any relevant industry trends, market
+                conditions, or user behaviors that influenced the project.
+                Provide a clear understanding of why the project was initiated.
+              </li>
+            </ul>
+            <p className="text-white md:text-justify mt-5 md:text-md">
+              The design project that our team envisions, provides a profound
+              and comprehensive understanding of the factors and why they came
+              to be, that led to the initial planning of the project. Factors
+              such as industry trends, market conditions, and ultimately, user
+              behaviors have helped the team in wholeheartedly understanding the
+              necessary actions and solutions that may mitigate and even prevent
+              such challenges in the chosen field. The team had thoroughly
+              researched certain user behaviors that had an increasing
+              significance on health and well-being. The prevalence of
+              technology and the increasing variety of meals has influenced
+              people to have sedentary lifestyles, such lifestyles heavily
+              impact their overall health. On top of that, specific user
+              challenges such as limited time constraints, causes them to desire
+              less of having a fitness-oriented lifestyle. However, some users
+              tend to exemplify the desire to prioritize health despite time
+              constraints due to high demand work environments. In light of
+              this, the team gained valuable insight on capitalizing this
+              behavior and carefully thought of innovative solutions using
+              technology. The rise of health-conscious consumers, coupled with
+              the advancements in technology, provided a strong ground for our
+              project.
+            </p>
+          </div>
+        </div>
+
+        <div className="md:mt-8 xs:mt-10">
+          {/*PROBLEM SECTION*/}
+          <h2 className="text-2xl font-bold text-white md:inline">
+            PROBLEM STATEMENT
+          </h2>
+          <div className="border-solid border-2 border-grey-500 bg-slate-300 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-green-300">
+            <ul className="list-disc text-black md:text-justify md:text-md">
+              <li>
+                <b>Purpose:</b> Clearly define the problem or challenge that the
+                design project aimed to solve.
+              </li>
+              <li>
+                <b>Content:</b> Articulate the problem statement in a concise
+                and focused manner. This section helps readers understand the
+                specific issues that needed addressing.
+              </li>
+            </ul>
+            <p className="text-black md:text-justify mt-5 md:text-md">
+              The design project that our team proposed revolves around
+              addressing the challenges and issues situated in the Sustainable
+              Development Goal 3: “Good Health and Well-Being.”. The team’s goal
+              is to proactively innovate and systematically create a solution
+              that will truly enhance the overall health and well-being of
+              individuals that are currently facing health-related issues. As
+              food and delicacies become more diverse, we humans become too
+              complacent of what we consume. This, in turn, creates a problem
+              wherein we eat more than what we should, consume more calories
+              than what is recommended. Our team envisions that this design
+              project will cater to the needs of those individuals who are
+              struggling in losing or gaining weight.
+            </p>
+          </div>
+        </div>
+
+        <div className="md:mt-8 xs:mt-10">
+          {/*USER RESEARCH SECTION*/}
+          <h2 className="text-2xl font-bold text-white flex justify-end">
+            USER RESEARCH
+          </h2>
+          <div className="border-solid border-2 bg-green-900 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-slate-300">
+            <ul className="list-disc text-white md:text-justify md:text-md">
+              <li>
+                <b>Purpose:</b> Share insights gained from the research
+                conducted to understand the target users and their needs.
+              </li>
+              <li>
+                <b>Content:</b> Include information about the research methods
+                employed, key findings, user personas, and any other relevant
+                data that informed the design process.
+              </li>
+            </ul>
+            <p className="text-white md:text-justify mt-5 md:text-md">
+              TThe team’s research, conducted with precise detail embraced an
+              approach that would meticulously go through with every specific
+              corner of the challenge. We had thoroughly gathered data that
+              would be beneficial to support the overarching ideas that were
+              already in mind the moment the team was finished with specifying
+              and finalizing the scope of the problem. The main part of our
+              research unraveled the complexities of certain individuals in
+              terms of how they behave, think, say, and feel.
+              <br />
+              <br /> The team had managed to create 2 certain user personas
+              whose characteristics perfectly matched the criteria needed for
+              those who are essentially going to benefit from the proposed
+              design project or solution. One of the personas we produced was
+              named Jebron Lames, a 26-year old male individual who struggles to
+              track his calorie intake and practice a healthy lifestyle due to
+              the time constraints and intricate challenges of having to deal
+              with work. This persona of a person stubbornly tries to do things
+              in a convenient and hassle-free manner, a high priority in
+              efficiency tells us that this user does not like to waste valuable
+              time. With that being said, the persona of Jebron Lames perfectly
+              serves as a canvas for the solution that the team has crafted in
+              mind. The researchers also created empathy maps through Miro
+              wherein they empathized with the personas and imagined themselves
+              being in their shoes. This allowed them to brainstorm more ideas
+              for the app and what it would possibly need to be a success.
+            </p>
+          </div>
+          <Accordion items={accordionItems} />
         </div>
       </div>
     </>
