@@ -4,8 +4,16 @@ import jebron from "../assets/jebron.jpg";
 import empathymap from "../assets/empathymap.jpg";
 import dev from "../assets/dev.jpg";
 import Accordion from "../components/Accordion";
+import scamper from "../assets/scamper.jpg";
+import prototype from "../assets/prototype.jpg";
 
 const SDG1 = () => {
+  const [showScamper, setShowScamper] = useState(false);
+
+  const toggleScamper = () => {
+    setShowScamper(!showScamper);
+  };
+
   const accordionItems = [
     {
       title: "Persona",
@@ -25,11 +33,11 @@ const SDG1 = () => {
           <br />
           Good Health & Well Being
         </h1>
-        <p className="text-lg text-white text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-          accumsan orci a odio facilisis, et aliquam arcu convallis. Fusce
-          tempus augue vel est fermentum molestie. Morbi ut mauris nec sapien
-          laoreet dignissim.
+        <p className="text-lg text-white text-center italic">
+          This page entails the researchers' case study on the SDG Good Health &
+          Well Being, which led them to use design thinking and ideation to
+          create a prototype of a calorie tracking mobile app called
+          CalorieSnap.
         </p>
 
         <div className="mx-auto mt-14 text-center">
@@ -234,6 +242,73 @@ const SDG1 = () => {
             </p>
           </div>
           <Accordion items={accordionItems} />
+        </div>
+
+        <div className="md:mt-10 xs:mt-10">
+          {/*IDEATION SECTION*/}
+          <h2 className="text-2xl font-bold text-white md:inline">IDEATION</h2>
+          <div className="border-solid border-2 border-grey-500 bg-slate-300 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-green-300">
+            <ul className="list-disc text-black md:text-justify md:text-md">
+              <li>
+                <b>Purpose:</b> Describe the ideation phase where potential
+                solutions were generated.
+              </li>
+              <li>
+                <b>Content:</b> Discuss brainstorming sessions, workshops, or
+                collaborative activities used to generate a variety of ideas.
+                Highlight key concepts and how they were initially evaluated.
+              </li>
+            </ul>
+            <p className="text-black md:text-justify mt-5 md:text-md">
+              The brainstorming session that was conducted by our group helped
+              us come up with various ideas on how to make an application and
+              what features are needed for the application in order to meet the
+              needs of the user. Our group posted some sticky notes in Miro and
+              discussed different types of solutions that could help us solve
+              the problem of the users until we came to the conclusion that a
+              certain idea would greatly contribute to the problem of the users.
+              Before proceeding further, our group evaluated the solution that
+              we came up with with caution and validated the solution. The
+              researchers employed ideation techniques such as <b>SCAMPER</b>{" "}
+              and <b>Fishbone Diagram</b> during this stage. <br></br>
+              <button
+                className={`cursor-pointer text-white mt-3 font-semibold border border-white md:px-3 md:py-2 rounded-2xl ${
+                  showScamper
+                    ? "bg-red-900 hover:bg-red-800"
+                    : "bg-green-900 hover:bg-green-800"
+                }`}
+                onClick={toggleScamper}
+              >
+                {!showScamper ? <p>Show SCAMPER</p> : <p>CLOSE</p>}
+              </button>
+            </p>
+          </div>
+          {showScamper && <img src={scamper} className="mt-8" />}
+        </div>
+
+        <div className="md:mt-8 xs:mt-10">
+          {/*PROTOTYPE SECTION*/}
+          <h2 className="text-2xl font-bold text-white flex justify-end">
+            PROTOTYPE
+          </h2>
+          <div className="border-solid border-2 bg-green-900 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-slate-300">
+            <ul className="list-disc text-white md:text-justify md:text-md">
+              <li>
+                <b>Purpose:</b> Explain how design concepts were translated into
+                tangible prototypes.
+              </li>
+              <li>
+                <b>Content:</b> Showcase different iterations of prototypes,
+                from low-fidelity to high fidelity versions.
+              </li>
+            </ul>
+            <p className="text-white md:text-justify mt-5 md:text-md">
+              Below is a low-fidelity wireframe of CalorieSnap.
+            </p>
+          </div>
+        </div>
+        <div className="mt-12 flex items-center justify-center">
+          <img src={prototype} />
         </div>
       </div>
     </>
