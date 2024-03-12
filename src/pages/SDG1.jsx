@@ -57,7 +57,7 @@ const SDG1 = () => {
             <div className="w-full shadow-xl flex flex-col p-4 my-2 rounded-lg hover:scale-105 duration-300 shadow-gray-400">
               <img className="mx-auto mt-[-3rem]" src={dev} alt="/" />
               <h2 className="text-2xl font-bold text-center py-6 text-white">
-                Nikkow Ensomow
+                Nikko Ensomo
               </h2>
               <p className="text-center text-base text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -67,7 +67,7 @@ const SDG1 = () => {
             <div className="w-full shadow-xl flex flex-col p-4 my-2 rounded-lg hover:scale-105 duration-300 shadow-gray-400">
               <img className="mx-auto mt-[-3rem]" src={dev} alt="/" />
               <h2 className="text-2xl font-bold text-center py-6 text-white">
-                Sareljohn 5 Pebeda
+                Sareljohn Pebida
               </h2>
               <p className="text-center text-base text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -77,7 +77,7 @@ const SDG1 = () => {
             <div className="w-full shadow-xl flex flex-col p-4 my-2 rounded-lg hover:scale-105 duration-300 shadow-gray-400">
               <img className="mx-auto mt-[-3rem]" src={dev} alt="/" />
               <h2 className="text-2xl font-bold text-center py-6 text-white">
-                Jolo Tangpuy
+                Jolo Tangpuz
               </h2>
               <p className="text-center text-base text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
