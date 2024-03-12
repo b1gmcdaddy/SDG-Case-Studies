@@ -4,7 +4,7 @@ import jebron from "../assets/jebron.jpg";
 import empathymap from "../assets/empathymap.jpg";
 import Accordion from "../components/Accordion";
 import scamper from "../assets/scamper.jpg";
-import prototype from "../assets/prototype.jpg";
+import prototype from "../assets/prototype.png";
 import jolo from "../assets/jolo.jpg";
 import nikko from "../assets/nikko.jpg";
 import sarel from "../assets/sarel.jpg";
@@ -320,13 +320,39 @@ const SDG1 = () => {
               </li>
             </ul>
             <p className="text-white md:text-justify mt-5 md:text-md">
-              Below is a low-fidelity wireframe of CalorieSnap.
+              To commence the prototyping stage, each individual member of the
+              team gathered everything from the initial brainstorming sparks to
+              the latest ideas. This meant revisiting early concepts, exploring
+              potential features, and identifying any roadblocks encountered
+              along the way. Some initial ideas mirrored features seen on
+              platforms used by the observed users. However, the key focus was
+              on creating a design that offered greater ease of use and improved
+              efficiency. In the prototype that the team managed to design and
+              produce, it contains 14 pages with different screens for different
+              types of use. It includes all the necessary pages from
+              registration up to using the scanning feature that the team will
+              implement in the upcoming weeks. Some of the critique that the
+              team faced while presenting the prototype was on how our design
+              project can be different from the rest. The answer that we came up
+              with was that our design project can be unique in a way that it is
+              suited for Filipino cuisine and meals. In this way, users will not
+              have difficulty in trying to search for the amount of calories a
+              certain Filipino dish will have.
+              <br />
+              <br />
+              <p className="text-center text-lg font-semibold italic">
+                Below is a low fidelity screenshot of the wireframe of
+                CalorieSnap
+              </p>
             </p>
           </div>
         </div>
         <div className="mt-12 flex items-center justify-center">
           <img src={prototype} />
         </div>
+        <h1 className="text-white md:text-6xl xs:text-2xl text-center font-extrabold drop-shadow-sm">
+          Calorie<span className="text-green-600">Snap</span>
+        </h1>
       </div>
     </>
   );
