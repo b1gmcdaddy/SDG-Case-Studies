@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import jebron from "../assets/jebron.jpg";
 import empathymap from "../assets/empathymap.jpg";
-import dev from "../assets/dev.jpg";
 import Accordion from "../components/Accordion";
 import scamper from "../assets/scamper.jpg";
 import prototype from "../assets/prototype.jpg";
+import jolo from "../assets/jolo.jpg";
+import nikko from "../assets/nikko.jpg";
+import sarel from "../assets/sarel.jpg";
 
 const SDG1 = () => {
   const [showScamper, setShowScamper] = useState(false);
@@ -47,41 +49,56 @@ const SDG1 = () => {
           </h1>
           <div className="w-[100px] h-[4px] mx-auto bg-green-700 rounded-md mt-3 mb-3"></div>
           <p className="text-white md:text-lg xs:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            The following are the proponents involved in the research and
+            development of this case study.
           </p>
         </div>
 
         <div className="w-full py-[4rem] px-4">
           <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-16">
             <div className="w-full shadow-xl flex flex-col p-4 my-2 rounded-lg hover:scale-105 duration-300 shadow-gray-400">
-              <img className="mx-auto mt-[-3rem]" src={dev} alt="/" />
-              <h2 className="text-2xl font-bold text-center py-6 text-white">
+              <img
+                className="mx-auto mt-[-3rem] rounded-lg h-[450px]"
+                src={nikko}
+                alt="/"
+              />
+              <h2 className="text-2xl font-bold text-center py-5 text-white">
                 Nikko Ensomo
               </h2>
               <p className="text-center text-base text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam.
+                20101049@usc.edu.ph
+                <br />
+                BSIT - 3
               </p>
             </div>
             <div className="w-full shadow-xl flex flex-col p-4 my-2 rounded-lg hover:scale-105 duration-300 shadow-gray-400">
-              <img className="mx-auto mt-[-3rem]" src={dev} alt="/" />
-              <h2 className="text-2xl font-bold text-center py-6 text-white">
+              <img
+                className="mx-auto mt-[-3rem] rounded-lg h-[450px]"
+                src={sarel}
+                alt="/"
+              />
+              <h2 className="text-2xl font-bold text-center py-5 text-white">
                 Sareljohn Pebida
               </h2>
               <p className="text-center text-base text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam.
+                18103999@usc.edu.ph
+                <br />
+                BSIT - 3
               </p>
             </div>
             <div className="w-full shadow-xl flex flex-col p-4 my-2 rounded-lg hover:scale-105 duration-300 shadow-gray-400">
-              <img className="mx-auto mt-[-3rem]" src={dev} alt="/" />
-              <h2 className="text-2xl font-bold text-center py-6 text-white">
-                Jolo Tangpuz
+              <img
+                className="mx-auto mt-[-3rem] rounded-lg h-[450px]"
+                src={jolo}
+                alt="/"
+              />
+              <h2 className="text-2xl font-bold text-center py-5 text-white">
+                Jolony Tangpuz
               </h2>
               <p className="text-center text-base text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam.
+                17100437@usc.edu.ph
+                <br />
+                BSIT - 3
               </p>
             </div>
           </div>
