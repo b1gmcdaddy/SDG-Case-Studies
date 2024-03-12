@@ -15,10 +15,12 @@ const Home = () => {
           Choose the SDG Case Study to View
         </h1>
         <p className="text-lg text-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-          accumsan orci a odio facilisis, et aliquam arcu convallis. Fusce
-          tempus augue vel est fermentum molestie. Morbi ut mauris nec sapien
-          laoreet dignissim.
+          Below are the two SDGs that Group 7{" "}
+          <i>
+            <u>Ensomo, Pebida, Tangpuz </u>
+          </i>
+          have chosen for their Design Project case studies. Click either image
+          to view the different pages for each aformentioned case study.
         </p>
         <div className="md:flex mt-10">
           <Link to="/GoodHealthSDG" className="w-1/2 mr-4">

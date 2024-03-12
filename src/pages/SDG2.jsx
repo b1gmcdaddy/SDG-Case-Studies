@@ -58,7 +58,7 @@ const SDG2 = () => {
           <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-16">
             <div className="w-full shadow-xl flex flex-col p-4 my-2 rounded-lg hover:scale-105 duration-300 shadow-gray-400">
               <img
-                className="mx-auto mt-[-3rem] rounded-lg h-[450px]"
+                className="mx-auto mt-[-3rem] rounded-lg md:h-[450px]"
                 src={nikko}
                 alt="/"
               />
@@ -73,7 +73,7 @@ const SDG2 = () => {
             </div>
             <div className="w-full shadow-xl flex flex-col p-4 my-2 rounded-lg hover:scale-105 duration-300 shadow-gray-400">
               <img
-                className="mx-auto mt-[-3rem] rounded-lg h-[450px]"
+                className="mx-auto mt-[-3rem] rounded-lg md:h-[450px]"
                 src={sarel}
                 alt="/"
               />
@@ -88,7 +88,7 @@ const SDG2 = () => {
             </div>
             <div className="w-full shadow-xl flex flex-col p-4 my-2 rounded-lg hover:scale-105 duration-300 shadow-gray-400">
               <img
-                className="mx-auto mt-[-3rem] rounded-lg h-[450px]"
+                className="mx-auto mt-[-3rem] rounded-lg md:h-[450px]"
                 src={jolo}
                 alt="/"
               />
@@ -331,29 +331,28 @@ const SDG2 = () => {
               </li>
             </ul>
             <p className="text-white md:text-justify mt-5 md:text-md">
-              To commence the prototyping stage, each individual member of the
-              team gathered everything from the initial brainstorming sparks to
-              the latest ideas. This meant revisiting early concepts, exploring
-              potential features, and identifying any roadblocks encountered
-              along the way. Some initial ideas mirrored features seen on
-              platforms used by the observed users. However, the key focus was
-              on creating a design that offered greater ease of use and improved
-              efficiency. In the prototype that the team managed to design and
-              produce, it contains 14 pages with different screens for different
-              types of use. It includes all the necessary pages from
-              registration up to using the scanning feature that the team will
-              implement in the upcoming weeks. Some of the critique that the
-              team faced while presenting the prototype was on how our design
-              project can be different from the rest. The answer that we came up
-              with was that our design project can be unique in a way that it is
-              suited for Filipino cuisine and meals. In this way, users will not
-              have difficulty in trying to search for the amount of calories a
-              certain Filipino dish will have.
+              The team head first gathered all the necessary information that
+              had been known from the start, starting from the very first
+              brainstorming session down to the last bits of ideation that the
+              team had done. In light of that, we carefully went through in
+              revisiting early concepts, exploring potential features and
+              identified it throughout the whole process. The first few concepts
+              that the team had thought included some variations of features
+              that were present in some of the websites that were used by the
+              people that we have observed, the key differences that we took
+              note of included convenience and efficiency in using the overall
+              design project. <br />
+              <br />
+              In the prototype that the team managed to design and produce, it
+              contains 10 pages with different screens for different types of
+              use. It includes all the necessary pages from sign up to opening,
+              reading, bookmarking, and rating academic resources that shall be
+              found on the design project system that the team envisioned.
               <br />
               <br />
               <p className="text-center text-lg font-semibold italic">
-                Below is a low fidelity screenshot of the wireframe of
-                CalorieSnap
+                Below is a low fidelity screenshot of the wireframe of the
+                Re:Sources web app.
               </p>
             </p>
           </div>
