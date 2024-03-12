@@ -297,7 +297,7 @@ const SDG1 = () => {
                 }`}
                 onClick={toggleScamper}
               >
-                {!showScamper ? <p>Show SCAMPER</p> : <p>CLOSE</p>}
+                {!showScamper ? <p>Show Ideation Diagrams</p> : <p>CLOSE</p>}
               </button>
             </p>
           </div>
