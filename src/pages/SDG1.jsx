@@ -3,7 +3,8 @@ import Navbar from "../components/Navbar";
 import jebron from "../assets/jebron.jpg";
 import empathymap from "../assets/empathymap.jpg";
 import Accordion from "../components/Accordion";
-import scamper from "../assets/scamper.jpg";
+import scamper from "../assets/scamper.png";
+import fishbone1 from "../assets/fishbone1.png";
 import prototype from "../assets/prototype.png";
 import jolo from "../assets/jolo.jpg";
 import nikko from "../assets/nikko.jpg";
@@ -289,7 +290,7 @@ const SDG1 = () => {
               researchers employed ideation techniques such as <b>SCAMPER</b>{" "}
               and <b>Fishbone Diagram</b> during this stage. <br></br>
               <button
-                className={`cursor-pointer text-white mt-3 font-semibold border border-white md:px-3 md:py-2 rounded-2xl ${
+                className={`cursor-pointer text-white mt-3 font-semibold border border-white px-3 md:py-2 rounded-2xl ${
                   showScamper
                     ? "bg-red-900 hover:bg-red-800"
                     : "bg-green-900 hover:bg-green-800"
@@ -300,7 +301,12 @@ const SDG1 = () => {
               </button>
             </p>
           </div>
-          {showScamper && <img src={scamper} className="mt-8" />}
+          {showScamper && (
+            <div className="text-center">
+              <img src={scamper} className="mt-8 mx-auto w-full" />
+              <img src={fishbone1} className="mt-5 mx-auto" />
+            </div>
+          )}
         </div>
 
         <div className="md:mt-8 xs:mt-10">

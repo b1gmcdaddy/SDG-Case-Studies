@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-import jebron from "../assets/jebron.jpg";
-import empathymap from "../assets/empathymap.jpg";
+import empathy2 from "../assets/empathy2.png";
 import Accordion from "../components/Accordion";
-import scamper from "../assets/scamper.jpg";
-import prototype from "../assets/prototype.png";
+import ideation2 from "../assets/ideation2.png";
+import prototype2 from "../assets/prototype2.png";
 import jolo from "../assets/jolo.jpg";
 import nikko from "../assets/nikko.jpg";
 import sarel from "../assets/sarel.jpg";
+import elijah from "../assets/elijah.png";
 
 const SDG2 = () => {
   const [showScamper, setShowScamper] = useState(false);
@@ -19,11 +19,11 @@ const SDG2 = () => {
   const accordionItems = [
     {
       title: "Persona",
-      image: `${jebron}`,
+      image: `${elijah}`,
     },
     {
       title: "Empathy Map",
-      image: `${empathymap}`,
+      image: `${empathy2}`,
     },
   ];
 
@@ -121,17 +121,15 @@ const SDG2 = () => {
             </ul>
             <p className="text-black md:text-justify mt-5 md:text-md">
               The design project that our team proposed revolves around
-              addressing the challenges and issues situated in the Sustainable
-              Development Goal 3: “Good Health and Well-Being.”. The team’s goal
-              is to proactively innovate and systematically create a solution
-              that will truly enhance the overall health and well-being of
-              individuals that are currently facing health-related issues. As
-              food and delicacies become more diverse, we humans become too
-              complacent of what we consume. This, in turn, creates a problem
-              wherein we eat more than what we should, consume more calories
-              than what is recommended. Our team envisions that this design
-              project will cater to the needs of those individuals who are
-              struggling in losing or gaining weight.
+              addressing the challenges and issues situated in Sustainable
+              Development Goal 4: “Quality Education." Our team’s goal is to
+              create an application that makes the lives of its users easier and
+              that would greatly improve the quality of their education. As our
+              world keeps growing and evolving, people nowadays are more reliant
+              on technology, where sources of information are more accessible
+              but not as credible. Our team aims to provide a solution to this
+              problem in order to help the users look for sources that are
+              credible and can be used for their works.
             </p>
           </div>
         </div>
@@ -154,27 +152,26 @@ const SDG2 = () => {
               </li>
             </ul>
             <p className="text-white md:text-justify mt-5 md:text-md">
-              The design project that our team envisions, provides a profound
-              and comprehensive understanding of the factors and why they came
-              to be, that led to the initial planning of the project. Factors
-              such as industry trends, market conditions, and ultimately, user
-              behaviors have helped the team in wholeheartedly understanding the
-              necessary actions and solutions that may mitigate and even prevent
-              such challenges in the chosen field. The team had thoroughly
-              researched certain user behaviors that had an increasing
-              significance on health and well-being. The prevalence of
-              technology and the increasing variety of meals has influenced
-              people to have sedentary lifestyles, such lifestyles heavily
-              impact their overall health. On top of that, specific user
-              challenges such as limited time constraints, causes them to desire
-              less of having a fitness-oriented lifestyle. However, some users
-              tend to exemplify the desire to prioritize health despite time
-              constraints due to high demand work environments. In light of
-              this, the team gained valuable insight on capitalizing this
-              behavior and carefully thought of innovative solutions using
-              technology. The rise of health-conscious consumers, coupled with
-              the advancements in technology, provided a strong ground for our
-              project.
+              In this fast-paced world, people tend to rely more on technology
+              to look for credible resources that they will use for their works
+              and rarely visit the library. Our team thought of an application
+              that could meet the needs of the users. We will create a simple,
+              user-friendly, and efficient application so that the users will
+              not have a hard time using the application. <br />
+              <br />
+              Our team thinks thoroughly about the factors that would affect the
+              behaviors of the users and why they act like this. As the world
+              keeps on changing, technology is rapidly evolving, and many
+              automobiles are created where they can cause heavy traffic, which
+              causes people to often visit libraries. People nowadays tend to
+              rely more on technology to look for sources of information because
+              it saves time compared to going to the library and looking for
+              information that they will use for their work. But the problem is
+              that not all sources of information found on the internet are
+              credible; some of them are false information, which is common
+              nowadays. That is why our team decided to come up with a solution
+              that would solve this problem and create an application that meets
+              the needs of the users.
             </p>
           </div>
         </div>
@@ -197,18 +194,23 @@ const SDG2 = () => {
               </li>
             </ul>
             <p className="text-black md:text-justify mt-5 md:text-md">
-              The design project that our team proposed revolves around
-              addressing the challenges and issues situated in the Sustainable
-              Development Goal 3: “Good Health and Well-Being.”. The team’s goal
-              is to proactively innovate and systematically create a solution
-              that will truly enhance the overall health and well-being of
-              individuals that are currently facing health-related issues. As
-              food and delicacies become more diverse, we humans become too
-              complacent of what we consume. This, in turn, creates a problem
-              wherein we eat more than what we should, consume more calories
-              than what is recommended. Our team envisions that this design
-              project will cater to the needs of those individuals who are
-              struggling in losing or gaining weight.
+              The Design Project that the team envisioned is aimed at resolving
+              the critical challenges in the context of information access and
+              credibility assessment. The main objective of our project is to
+              provide a solution by creating an innovative system that allows
+              users who grapple with the challenges of sourcing reliable
+              information for teacher, learning, and research purposes.
+              <br />
+              <br /> In today’s world of academe, users find it difficult to
+              search for credible, reliable, and up-to-date information. Users
+              who are facing certain complexities such as time constraints find
+              it difficult in navigating through diverse sources scattered
+              across the internet. Some websites that publish such information
+              even ask for overpriced subscriptions wherein students like the
+              most of us, cannot afford to begin with. In addition to that, the
+              absence of a robust system to assess the credibility of certain
+              documents filled with information creates uncertainty towards the
+              individual’s overall research.
             </p>
           </div>
         </div>
@@ -231,31 +233,24 @@ const SDG2 = () => {
               </li>
             </ul>
             <p className="text-white md:text-justify mt-5 md:text-md">
-              TThe team’s research, conducted with precise detail embraced an
-              approach that would meticulously go through with every specific
-              corner of the challenge. We had thoroughly gathered data that
-              would be beneficial to support the overarching ideas that were
-              already in mind the moment the team was finished with specifying
-              and finalizing the scope of the problem. The main part of our
-              research unraveled the complexities of certain individuals in
-              terms of how they behave, think, say, and feel.
+              Throughout this whole process, early research with the problem at
+              hand helped the team in understanding the specific needs and
+              challenges faced by certain individuals who want to have a
+              convenient and efficient access to academic reading materials.
+              This in-depth exploration allowed us to identify the pain points
+              and preferences of those said individuals that would help the team
+              in capitalizing on the design direction of our project. In doing
+              all of this, the team can ensure that the final product will
+              seamlessly integrate all the possible solutions. <br />
               <br />
-              <br /> The team had managed to create 2 certain user personas
-              whose characteristics perfectly matched the criteria needed for
-              those who are essentially going to benefit from the proposed
-              design project or solution. One of the personas we produced was
-              named Jebron Lames, a 26-year old male individual who struggles to
-              track his calorie intake and practice a healthy lifestyle due to
-              the time constraints and intricate challenges of having to deal
-              with work. This persona of a person stubbornly tries to do things
-              in a convenient and hassle-free manner, a high priority in
-              efficiency tells us that this user does not like to waste valuable
-              time. With that being said, the persona of Jebron Lames perfectly
-              serves as a canvas for the solution that the team has crafted in
-              mind. The researchers also created empathy maps through Miro
-              wherein they empathized with the personas and imagined themselves
-              being in their shoes. This allowed them to brainstorm more ideas
-              for the app and what it would possibly need to be a success.
+              The team has produced 2 user personas that directly inherit the
+              needs and challenges of a certain individual that is highly likely
+              to be the recipient of our design project. One of the personas is
+              a 22-year old single male named Elijah Baguio, as a student in a
+              university, this individual’s main goal is to back up his
+              assignments with reliable sources. He plans to access a site that
+              is hassle-free which shall ultimately help him work on and finish
+              his assignment efficiently.
             </p>
           </div>
           <Accordion items={accordionItems} />
@@ -277,30 +272,46 @@ const SDG2 = () => {
               </li>
             </ul>
             <p className="text-black md:text-justify mt-5 md:text-md">
-              The brainstorming session that was conducted by our group helped
-              us come up with various ideas on how to make an application and
-              what features are needed for the application in order to meet the
-              needs of the user. Our group posted some sticky notes in Miro and
-              discussed different types of solutions that could help us solve
-              the problem of the users until we came to the conclusion that a
-              certain idea would greatly contribute to the problem of the users.
-              Before proceeding further, our group evaluated the solution that
-              we came up with with caution and validated the solution. The
-              researchers employed ideation techniques such as <b>SCAMPER</b>{" "}
-              and <b>Fishbone Diagram</b> during this stage. <br></br>
+              The team emphasized on having observational studies involved in
+              analyzing the actual behaviors of users as they navigated existing
+              platforms to source information. We took a hands-on approach in
+              understanding the different needs of users, we carefully watched
+              how people in the real-world navigate existing platforms to find
+              the necessary information. In doing all of those, the team managed
+              to see firsthand the existing challenges that those individuals
+              had faced during their search process. Ultimately, the team was
+              able to identify the specific pain points and understand the
+              context in which those certain problems came from. <br />
+              <br />
+              By utilizing all the gathered information about the main proponent
+              of the challenges that were observed. The team managed to
+              capitalize on the missing features of some web-based systems that
+              publish academic materials and went on to visualize how we can not
+              only implement but also improve those features that are highly
+              needed by the individuals that the team had observed. The team had
+              collaborative brainstorming sessions that involved each team
+              member to contribute in giving out diverse ideas on what the
+              possible features would be for the specific design project. The
+              researchers also employed ideation techniques such as{" "}
+              <b>SCAMPER</b> and <b>Fishbone Diagram</b> during this stage.
+              <br></br>
               <button
-                className={`cursor-pointer text-white mt-3 font-semibold border border-white md:px-3 md:py-2 rounded-2xl ${
+                className={`cursor-pointer text-white mt-3 font-semibold border border-white px-3 md:py-2 rounded-2xl ${
                   showScamper
-                    ? "bg-red-900 hover:bg-red-800"
-                    : "bg-green-900 hover:bg-green-800"
+                    ? "bg-gray-900 hover:bg-gray-800"
+                    : "bg-red-900 hover:bg-red-700"
                 }`}
                 onClick={toggleScamper}
               >
-                {!showScamper ? <p>Show SCAMPER</p> : <p>CLOSE</p>}
+                {!showScamper ? <p>Show Ideation Diagrams</p> : <p>CLOSE</p>}
               </button>
             </p>
           </div>
-          {showScamper && <img src={scamper} className="mt-8" />}
+          {showScamper && (
+            <div className="flex items-center justify-center">
+              <img src={ideation2} className="mt-8" />
+            </div>
+          )}
         </div>
 
         <div className="md:mt-8 xs:mt-10">
@@ -348,10 +359,10 @@ const SDG2 = () => {
           </div>
         </div>
         <div className="mt-12 flex items-center justify-center">
-          <img src={prototype} />
+          <img src={prototype2} />
         </div>
-        <h1 className="text-white md:text-6xl xs:text-2xl text-center font-extrabold drop-shadow-sm">
-          Calorie<span className="text-green-600">Snap</span>
+        <h1 className="text-white md:text-6xl xs:text-2xl text-center font-extrabold mt-5">
+          Re:Sources
         </h1>
       </div>
     </>
