@@ -15,11 +15,15 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
 
+  const style = {
+    fontFamily: "customFont, sans-serif",
+  };
+
   return (
     <nav className="w-full fixed top-0 left-0 shadow-2xl bg-slate-300">
       <div className="md:flex items-center md:mx-64 justify-between py-5 md:px-10 px-7">
-        <div className="font-bold text-2xl cursor-pointer flex items-center font-[Helvetica]">
-          <Link to="/" className="text-2xl mr-1 pt-2">
+        <div className="font-bold text-2xl cursor-pointer flex items-center">
+          <Link to="/" className="text-2xl mr-1 pt-2 font-bolder" style={style}>
             Gr7 SDGs CaseStudy
           </Link>
         </div>

@@ -8,6 +8,8 @@ import jolo from "../assets/jolo.jpg";
 import nikko from "../assets/nikko.jpg";
 import sarel from "../assets/sarel.jpg";
 import elijah from "../assets/elijah.png";
+import kylepersona from "../assets/kylepersona.png";
+import kyleempathy from "../assets/kyleempathy.png";
 
 const SDG2 = () => {
   const [showScamper, setShowScamper] = useState(false);
@@ -20,10 +22,12 @@ const SDG2 = () => {
     {
       title: "Persona",
       image: `${elijah}`,
+      image2: `${kylepersona}`,
     },
     {
       title: "Empathy Map",
       image: `${empathy2}`,
+      image2: `${kyleempathy}`,
     },
   ];
 

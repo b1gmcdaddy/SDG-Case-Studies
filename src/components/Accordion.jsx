@@ -34,6 +34,11 @@ const Accordion = ({ items }) => {
           {openIndices[index] && (
             <div className="p-4">
               <img src={item.image} alt={item.title} className="w-full" />
+              <img
+                src={item.image2}
+                alt={item.title2}
+                className="w-full mt-5"
+              />
             </div>
           )}
         </div>

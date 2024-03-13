@@ -9,6 +9,8 @@ import prototype from "../assets/prototype.png";
 import jolo from "../assets/jolo.jpg";
 import nikko from "../assets/nikko.jpg";
 import sarel from "../assets/sarel.jpg";
+import persona2 from "../assets/persona2.png";
+import empathy2a from "../assets/empathy2a.png";
 
 const SDG1 = () => {
   const [showScamper, setShowScamper] = useState(false);
@@ -21,10 +23,12 @@ const SDG1 = () => {
     {
       title: "Persona",
       image: `${jebron}`,
+      image2: `${persona2}`,
     },
     {
       title: "Empathy Map",
       image: `${empathymap}`,
+      image2: `${empathy2a}`,
     },
   ];
 
