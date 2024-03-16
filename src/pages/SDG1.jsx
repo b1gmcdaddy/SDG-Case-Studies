@@ -364,6 +364,87 @@ const SDG1 = () => {
           Calorie<span className="text-green-600">Snap</span>
         </h1>
       </div>
+
+      <div className="md:mt-10 xs:mt-10">
+        {/*LESSONS LEARNED SECTION*/}
+        <h2 className="text-2xl font-bold text-white md:inline">
+          LESSONS LEARNED
+        </h2>
+        <div className="border-solid border-2 border-grey-500 bg-slate-300 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-green-300">
+          <ul className="list-disc text-black md:text-justify md:text-md">
+            <li>
+              <b>Purpose:</b> Reflect on the challenges faced and lessons
+              learned during the design process.
+            </li>
+            <li>
+              <b>Content:</b> Discuss what worked well, what could be improved,
+              and any unexpected insights gained. This section contributes to
+              the continuous improvement of the design thinking process.
+            </li>
+          </ul>
+          <p className="text-black md:text-justify mt-5 md:text-md">
+            Over the course of the project, the team learned a good deal of
+            valuable lessons. The team learned a great deal throughout the
+            design project, from the ideation meetings to the prototyping
+            phases. These were insights and lessons we would not have discovered
+            otherwise. <br />
+            <br />
+            The guides that our teacher has given us have really helped our team
+            understand how the ideation process works, especially when we are
+            making our prototype, which is the wireframe. We made it possible
+            for us to make our prototype with Miro, which provides us with a
+            tool for our team to collaborate on our ideas without having a hard
+            time doing it. But before we have successfully made our prototype,
+            we have gone through the process of making a persona, which is a
+            replica of a real-world user.
+            <br />
+            <br /> With all of these processes, it has led us to a new insight,
+            which is that now we know that there are applications on the
+            internet that can provide us with the tools we needed for this
+            project. Miro helps us a lot in making our project because it
+            provides convenience to our team by making our collaboration easier
+            and more efficient than before. This learning will be one of our
+            stepping stones on how to collaborate and make projects much faster
+            than from our past project-making.
+          </p>
+        </div>
+      </div>
+
+      <div className="md:mt-8 xs:mt-10 mb-14">
+        {/*Conclusion SECTION*/}
+        <h2 className="text-4xl font-bold text-white text-center">
+          CONCLUSION
+        </h2>
+        <div className="border-solid border-2 bg-green-900 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-slate-300">
+          <ul className="list-disc text-white md:text-justify md:text-md">
+            <li>
+              <b>Purpose:</b> Summarize the key takeaways and outcomes of the
+              design project SDG Case Study.
+            </li>
+            <li>
+              <b>Content:</b> Provide a concise conclusion that recaps the main
+              points and emphasizes the significance of the design solution.
+            </li>
+          </ul>
+          <p className="text-white md:text-justify mt-5 md:text-md">
+            In conclusion, this activity really played a big part in our
+            upcoming projects, which helps us overcome our challenges and know
+            what to do next without wasting any time. The team conducted a
+            thorough brainstorming session and research on what the needs of the
+            users were. The application that our group has agreed upon is all
+            about tracking our daily intake of calories, which can help a person
+            be healthier because he or she will now know how many calories he or
+            she takes on a daily basis.
+            <br />
+            <br /> The challenges in our group started when we made our
+            personas, because it takes a lot of brainstorming sessions to decide
+            which solution is the best and that meets the needs of the users.
+            The team will keep improving by iterating through all the processes
+            after receiving feedback from our users in order to make them
+            satisfied and help solve their problems.
+          </p>
+        </div>
+      </div>
     </>
   );
 };
