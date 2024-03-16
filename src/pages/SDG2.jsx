@@ -368,6 +368,96 @@ const SDG2 = () => {
           Re:Sources
         </h1>
       </div>
+
+      <div className="md:mt-8 xs:mt-10">
+        {/*Lesson Learned SECTION*/}
+        <h2 className="text-2xl font-bold text-white md:inline">
+          LESSONS LEARNED
+        </h2>
+        <div className="border-solid border-2 border-grey-500 bg-slate-300 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-red-400">
+          <ul className="list-disc text-black md:text-justify md:text-md">
+            <li>
+              <b>Purpose:</b> Reflect on the challenges faced and lessons
+              learned during the design process.
+            </li>
+            <li>
+              <b>Content:</b> Discuss what worked well, what could be improved,
+              and any unexpected insights gained. This section contributes to
+              the continuous improvement of the design thinking process.
+            </li>
+          </ul>
+          <p className="text-black md:text-justify mt-5 md:text-md">
+            Quite a lot of lessons were learned by the team throughout the whole
+            course of the project. Starting from the brainstorming sessions down
+            to the prototyping stages of the design project, the team had
+            countless insights that were gained, insights and learnings that we
+            wouldn’t have known otherwise. What truly worked well for the team
+            was how easy it was for us to do most of the concepts needed to be
+            done in the entirety of the design project thanks to the Miro
+            application. This had made the work of the team much easier and
+            efficient, the convenience that it gave us tremendously paid off in
+            the end. In light of that, we successfully made the personas of
+            supposedly real-world people together with their respective empathy
+            maps. On the other hand, the team could improve on the basic
+            functionalities of the proposed wireframe and prototype, making it
+            more user-friendly and making the user experience much more
+            comfortable.
+            <br />
+            <br /> One notable unexpected learning insight that the whole team
+            gained, was that the whole idea of generating ideas and making them
+            into concrete systems such as prototypes is not a simple and easy
+            process. Before we were enrolled in this class, the whole idea of
+            ideation and prototyping was different for us, at first, we thought
+            it was something that could be done in one night. The team was naive
+            in thinking that the whole aspect of designing a project takes an
+            extended amount of time to work upon, it’s definitely not something
+            that can be crammed into one night of work. This learning has truly
+            given a new perspective of how the team views design project and
+            shall definitely help each and every member of the team, and the
+            whole team as a whole in the further development of our design
+            project.
+          </p>
+        </div>
+      </div>
+
+      <div className="md:mt-8 xs:mt-10 mb-14">
+        {/*Conclusion SECTION*/}
+        <h2 className="text-4xl font-bold text-white text-center">
+          CONCLUSION
+        </h2>
+        <div className="border-solid border-2 bg-red-900 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-slate-300">
+          <ul className="list-disc text-white md:text-justify md:text-md">
+            <li>
+              <b>Purpose:</b> Summarize the key takeaways and outcomes of the
+              design project SDG Case Study.
+            </li>
+            <li>
+              <b>Content:</b> Provide a concise conclusion that recaps the main
+              points and emphasizes the significance of the design solution.
+            </li>
+          </ul>
+          <p className="text-white md:text-justify mt-5 md:text-md">
+            In conclusion, the entirety of this design project took into account
+            the challenges and issues that were faced by the personas that the
+            team had made. In the case of the Quality Education SDG, the team
+            conducted in-depth user research and brainstormed solutions that
+            could be implemented to help mitigate and solve the problems that
+            the specific user goes through. Our envisioned application aims to
+            be a site where users can easily discover, read, evaluate, and use
+            credible sources of information that would help them in their
+            academic needs.
+            <br />
+            <br /> Through understanding the specific challenges and issues
+            faced by the users in our personas, the team has designed solutions
+            that not only cater and solve their immediate needs but also guide
+            and help them achieve their goals. The team shall continue on
+            improving bit by bit through iteration the design of the project
+            based on the user feedback, making sure that it stays true to those
+            certain needs of the users and make them valuable so that it may
+            make a difference in their everyday lives.
+          </p>
+        </div>
+      </div>
     </>
   );
 };
