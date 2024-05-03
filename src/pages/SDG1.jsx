@@ -11,10 +11,15 @@ import empathy2a from "../assets/empathy2a.png";
 
 const SDG1 = () => {
   const [showScamper, setShowScamper] = useState(false);
+  const [showPrototype1, setShowPrototype1] = useState(false);
 
   const toggleScamper = () => {
     setShowScamper(!showScamper);
   };
+
+  const togglePrototype1 = () => {
+    setShowPrototype1(!showPrototype1);
+  }
 
   const accordionItems = [
     {
@@ -80,7 +85,7 @@ const SDG1 = () => {
 
         <div className="md:mt-8 xs:mt-10">
           {/*PROJECT BACKGROUND SECTION*/}
-          <h2 className="text-2xl font-bold text-white flex justify-end">
+          <h2 className="text-2xl font-bold text-white">
             PROJECT BACKGROUND
           </h2>
           <div className="border-solid border-2 bg-green-900 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-slate-300">
@@ -157,7 +162,7 @@ const SDG1 = () => {
 
         <div className="md:mt-8 xs:mt-10">
           {/*USER RESEARCH SECTION*/}
-          <h2 className="text-2xl font-bold text-white flex justify-end">
+          <h2 className="text-2xl font-bold text-white ">
             USER RESEARCH
           </h2>
           <div className="border-solid border-2 bg-green-900 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-slate-300">
@@ -252,7 +257,7 @@ const SDG1 = () => {
 
         <div className="md:mt-8 xs:mt-10">
           {/*PROTOTYPE SECTION*/}
-          <h2 className="text-2xl font-bold text-white flex justify-end">
+          <h2 className="text-2xl font-bold text-white ">
             PROTOTYPE
           </h2>
           <div className="border-solid border-2 bg-green-900 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-slate-300">
