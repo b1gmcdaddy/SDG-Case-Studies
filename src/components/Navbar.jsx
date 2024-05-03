@@ -21,9 +21,9 @@ const Navbar = () => {
   return (
     <nav className="w-full fixed top-0 left-0 shadow-2xl bg-slate-300 z-20">
       <div className="md:flex items-center md:mx-64 justify-between py-5 md:px-10 px-7">
-        <div className="font-bold text-2xl cursor-pointer flex items-center">
-          <Link to="/" className="text-2xl mr-1 pt-2 font-bolder xs:text-lg" style={style}>
-            Group 7 SDGs Case Study
+        <div className="font-bold md:text-2xl xs:text-base cursor-pointer flex items-center">
+          <Link to="/" className="mr-1 pt-2 font-bolder" style={style}>
+            Group 7 Case Study
           </Link>
         </div>
         <div className="absolute right-8 top-7 cursor-pointer md:hidden">
