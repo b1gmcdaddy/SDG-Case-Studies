@@ -22,11 +22,17 @@ const Accordion = ({ items }) => {
             className="flex justify-between items-center px-4 py-2 cursor-pointer"
             onClick={() => toggleAccordion(index)}
           >
-            <div className="text-lg font-semibold">
+             <div className="text-lg font-semibold">
               {item.title}
-              <span className="ml-3 text-sm text-gray-400 italic">
-                Click me to show
-              </span>
+              {openIndices[index] ? (
+                <span className="ml-3 text-sm text-gray-400 italic">
+                  Click to close
+                </span>
+              ) : (
+                <span className="ml-3 text-sm text-gray-400 italic">
+                  Click me to show
+                </span>
+              )}
             </div>
 
             <div className="text-xl">{openIndices[index] ? "-" : "+"}</div>
