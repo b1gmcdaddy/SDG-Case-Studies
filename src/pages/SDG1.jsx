@@ -6,9 +6,6 @@ import Accordion from "../components/Accordion";
 import scamper from "../assets/scamper.png";
 import fishbone1 from "../assets/fishbone1.png";
 import prototype from "../assets/prototype.png";
-import jolo from "../assets/jolo.jpg";
-import nikko from "../assets/nikko.jpg";
-import sarel from "../assets/sarel.jpg";
 import persona2 from "../assets/persona2.png";
 import empathy2a from "../assets/empathy2a.png";
 
@@ -47,67 +44,7 @@ const SDG1 = () => {
           CalorieSnap.
         </p>
 
-        <div className="mx-auto mt-14 text-center">
-          {/*RESEARCHERS SECTION*/}
-          <h1 className="text-white md:text-2xl sm:text-xl tracking-wide text-xl font-bold">
-            MEET THE RESEARCHERS
-          </h1>
-          <div className="w-[100px] h-[4px] mx-auto bg-green-700 rounded-md mt-3 mb-3"></div>
-          <p className="text-white md:text-lg xs:text-base">
-            The following are the proponents involved in the research and
-            development of this case study.
-          </p>
-        </div>
-
-        <div className="w-full py-[4rem] px-4">
-          <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-16">
-            <div className="w-full shadow-xl flex flex-col p-4 my-2 rounded-lg hover:scale-105 duration-300 shadow-gray-400">
-              <img
-                className="mx-auto mt-[-3rem] rounded-lg h-[450px]"
-                src={nikko}
-                alt="/"
-              />
-              <h2 className="text-2xl font-bold text-center py-5 text-white">
-                Nikko Ensomo
-              </h2>
-              <p className="text-center text-base text-white">
-                20101049@usc.edu.ph
-                <br />
-                BSIT - 3
-              </p>
-            </div>
-            <div className="w-full shadow-xl flex flex-col p-4 my-2 rounded-lg hover:scale-105 duration-300 shadow-gray-400">
-              <img
-                className="mx-auto mt-[-3rem] rounded-lg h-[450px]"
-                src={sarel}
-                alt="/"
-              />
-              <h2 className="text-2xl font-bold text-center py-5 text-white">
-                Sareljohn Pebida
-              </h2>
-              <p className="text-center text-base text-white">
-                18103999@usc.edu.ph
-                <br />
-                BSIT - 3
-              </p>
-            </div>
-            <div className="w-full shadow-xl flex flex-col p-4 my-2 rounded-lg hover:scale-105 duration-300 shadow-gray-400">
-              <img
-                className="mx-auto mt-[-3rem] rounded-lg h-[450px]"
-                src={jolo}
-                alt="/"
-              />
-              <h2 className="text-2xl font-bold text-center py-5 text-white">
-                Jolony Tangpuz
-              </h2>
-              <p className="text-center text-base text-white">
-                17100437@usc.edu.ph
-                <br />
-                BSIT - 3
-              </p>
-            </div>
-          </div>
-        </div>
+       
 
         <div className="md:mt-8 xs:mt-10">
           {/*INTRODUCTION SECTION*/}
