@@ -8,7 +8,6 @@ const Navbar = () => {
 
   const Navlinks = [
     { name: "SDG1", path: "/GoodHealthSDG" },
-    { name: "SDG2", path: "/QualityEducSDG" },
   ];
 
   const toggleMenu = () => {

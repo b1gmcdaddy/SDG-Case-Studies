@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import SDG1 from "../assets/SDG1.png";
-import SDG2 from "../assets/SDG2.png";
 import { Link } from "react-router-dom";
 import "../App.css";
 
@@ -26,12 +25,6 @@ const Home = () => {
           <Link to="/GoodHealthSDG" className="w-1/2 mr-4">
             <img
               src={SDG1}
-              className="border-double border-8 border-white-500 rounded-lg"
-            />
-          </Link>
-          <Link to="/QualityEducSDG" className="w-1/2">
-            <img
-              src={SDG2}
               className="border-double border-8 border-white-500 rounded-lg"
             />
           </Link>
