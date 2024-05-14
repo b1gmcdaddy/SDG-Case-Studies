@@ -8,10 +8,13 @@ import fishbone1 from "../assets/fishbone1.png";
 import prototype from "../assets/prototype.png";
 import persona2 from "../assets/persona2.png";
 import empathy2a from "../assets/empathy2a.png";
+import feedback1 from "../assets/feedback1.jpg";
+import feedback2 from "../assets/feedback2.jpg";
 
 const SDG1 = () => {
   const [showScamper, setShowScamper] = useState(false);
   const [showPrototype1, setShowPrototype1] = useState(false);
+  const [showChanges, setShowChanges] = useState(false);
 
   const toggleScamper = () => {
     setShowScamper(!showScamper);
@@ -19,6 +22,10 @@ const SDG1 = () => {
 
   const togglePrototype1 = () => {
     setShowPrototype1(!showPrototype1);
+  }
+
+  const toggleChanges = () => {
+    setShowChanges(!showChanges);
   }
 
   const accordionItems = [
@@ -258,7 +265,7 @@ const SDG1 = () => {
         <div className="md:mt-8 xs:mt-10">
           {/*PROTOTYPE SECTION*/}
           <h2 className="text-2xl font-bold text-white ">
-            PROTOTYPE
+            INITIAL PROTOTYPE
           </h2>
           <div className="border-solid border-2 bg-green-900 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-slate-300">
             <ul className="list-disc text-white md:text-justify md:text-md">
@@ -291,21 +298,82 @@ const SDG1 = () => {
               have difficulty in trying to search for the amount of calories a
               certain Filipino dish will have.
               <br />
-              <br />
-              <p className="text-center text-lg font-semibold italic">
-                Below is a low fidelity screenshot of the wireframe of
-                CalorieSnap
-              </p>
+
             </p>
+          <button
+                className={`cursor-pointer mt-3 font-semibold border border-white px-3 md:py-2 rounded-2xl text-green-800 ${
+                  showPrototype1
+                    ? "bg-red-900 hover:bg-red-800"
+                    : "bg-slate-300 hover:bg-slate-200"
+                }`}
+                onClick={togglePrototype1}
+              >
+                {!showPrototype1 ? <p>Show Initial Prototype</p> : <p className="text-white">CLOSE</p>}
+              </button>
+         
           </div>
+          {showPrototype1 && (
+            <div className="text-center">
+              <img src={prototype} className="mt-8 mx-auto w-full" />
+            </div>
+          )}
         </div>
-        <div className="mt-12 flex items-center justify-center">
-          <img src={prototype} />
         </div>
-        <h1 className="text-white md:text-6xl xs:text-2xl text-center font-extrabold drop-shadow-sm">
-          Calorie<span className="text-green-600">Snap</span>
-        </h1>
+ 
+          
+      <div className="md:mt-10 xs:mt-10">
+        {/*FEEDBACK SECTION*/}
+        <h2 className="text-2xl font-bold text-white md:inline">
+          FEEDBACK ANALYSIS
+        </h2>
+        <div className="border-solid border-2 border-grey-500 bg-slate-300 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-green-300">
+          <p className="text-black md:text-justify  md:text-md">
+                            Gathering and systematically analyzing the feedback data gathered from the
+                  respondents is an indispensable part in developing any kind of project. It is completely
+                  necessary to have constructive feedback and criticisms from other people outside of the
+                  developers themselves. In doing this, the team can look through certain parts that we couldn’t
+                  look at ourselves. Constructive feedback allows the team to have another perspective in viewing
+                  the prototype, areas wherein certain parts were overlooked. This would also allow the final
+                  prototype or finished project to be more user-centered in terms of functionality and overall
+                  design. Overall, gathering feedback is indeed necessary for further improvement and
+                  development of the design project, allowing the prototype to be criticized by respondents or the
+                  target audience would only give room for refinement of our prototype.
+             <br />
+            <br />
+                          The feedback gathering session and analysis allowed our group to find out
+              important aspects about our prototype that we may have overlooked. It was a great
+              opportunity to gather relevant input and critique from various different people that used
+              and tested our prototype. As developers, we need to be mindful of the response and
+              inputs given by the target users so that we can make the best possible output that would
+              satisfy their needs. Our group was able to gather a good number of responses during
+              our feedback session, which included input from other DCISM students, friends, and
+              even students from other courses and departments
+            <br />
+            <br /> Due to the feedback gathering session, the researchers were able to strategically
+            use the received feedback to greatly enhance our prototype design. Click the button below to see the changes 
+            our group decided to include in our prototype!
+          </p><br/>
+          <button
+                className={`cursor-pointer mt-3 font-semibold border border-white px-3 md:py-2 rounded-2xl text-white ${
+                  showChanges
+                    ? "bg-red-900 hover:bg-red-800"
+                    : "bg-green-800 hover:bg-green-700"
+                }`}
+                onClick={toggleChanges}
+              >
+                {!showChanges ? <p>Feedback Analysis Results</p> : <p className="text-white">CLOSE</p>}
+              </button>
+         
+    
+          {showChanges && (
+            <div className="text-center">
+             <img src={feedback1} className="mt-8 mx-auto w-full" />
+              <img src={feedback2} className="mt-5 mx-auto" />
+            </div>
+          )}
+        </div>
       </div>
+
 
       <div className="md:mt-10 xs:mt-10">
         {/*LESSONS LEARNED SECTION*/}
@@ -351,7 +419,6 @@ const SDG1 = () => {
           </p>
         </div>
       </div>
-
       <div className="md:mt-8 xs:mt-10 mb-14">
         {/*Conclusion SECTION*/}
         <h2 className="text-4xl font-bold text-white text-center">
