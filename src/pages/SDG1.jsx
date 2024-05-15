@@ -10,11 +10,17 @@ import persona2 from "../assets/persona2.png";
 import empathy2a from "../assets/empathy2a.png";
 import feedback1 from "../assets/feedback1.jpg";
 import feedback2 from "../assets/feedback2.jpg";
+import finalProto1 from "../assets/finalProto1.png";
+import finalProto2 from "../assets/finalProto2.png";
+import finalProto3 from "../assets/finalProto3.png";
+import finalProto4 from "../assets/finalProto4.png";
+import finalProto5 from "../assets/finalProto5.png";
 
 const SDG1 = () => {
   const [showScamper, setShowScamper] = useState(false);
   const [showPrototype1, setShowPrototype1] = useState(false);
   const [showChanges, setShowChanges] = useState(false);
+  const [showPrototype2, setShowPrototype2] = useState(false);
 
   const toggleScamper = () => {
     setShowScamper(!showScamper);
@@ -26,6 +32,10 @@ const SDG1 = () => {
 
   const toggleChanges = () => {
     setShowChanges(!showChanges);
+  }
+
+  const togglePrototype2 = () => {
+    setShowPrototype2(!showPrototype2);
   }
 
   const accordionItems = [
@@ -263,7 +273,7 @@ const SDG1 = () => {
         </div>
 
         <div className="md:mt-8 xs:mt-10">
-          {/*PROTOTYPE SECTION*/}
+          {/* initial PROTOTYPE SECTION*/}
           <h2 className="text-2xl font-bold text-white ">
             INITIAL PROTOTYPE
           </h2>
@@ -375,6 +385,66 @@ const SDG1 = () => {
       </div>
 
 
+      <div className="md:mt-8 xs:mt-10">
+          {/* NEW PROTOTYPE SECTION*/}
+          <h2 className="text-2xl font-bold text-yellow-300">
+            FINAL PROTOTYPE
+          </h2>
+          <div className="border-solid border-2 bg-green-900 rounded-3xl mt-3 md:px-12 xs:px-8 py-5 shadow-lg shadow-slate-300">
+            <ul className="list-disc text-white md:text-justify md:text-md">
+              <li>
+                <b>Purpose:</b> To showcase how we implemented the feedback analysis into our prototype design.
+              </li>
+              <li>
+                <b>Content:</b> Show the difference between our initial and final prototype. More pages, UI/UX, and functionalities have been added.
+              </li>
+            </ul>
+            <p className="text-white md:text-justify mt-5 md:text-md">
+              To commence the prototyping stage, each individual member of the
+              team gathered everything from the initial brainstorming sparks to
+              the latest ideas. This meant revisiting early concepts, exploring
+              potential features, and identifying any roadblocks encountered
+              along the way. Some initial ideas mirrored features seen on
+              platforms used by the observed users. However, the key focus was
+              on creating a design that offered greater ease of use and improved
+              efficiency. In the prototype that the team managed to design and
+              produce, it contains 14 pages with different screens for different
+              types of use. It includes all the necessary pages from
+              registration up to using the scanning feature that the team will
+              implement in the upcoming weeks. Some of the critique that the
+              team faced while presenting the prototype was on how our design
+              project can be different from the rest. The answer that we came up
+              with was that our design project can be unique in a way that it is
+              suited for Filipino cuisine and meals. In this way, users will not
+              have difficulty in trying to search for the amount of calories a
+              certain Filipino dish will have.
+              <br />
+
+            </p><br/>
+          <button
+                className={`cursor-pointer mt-3 font-semibold border border-white px-3 md:py-2 rounded-2xl text-green-800 ${
+                  showPrototype2
+                    ? "bg-red-900 hover:bg-red-800"
+                    : "bg-slate-300 hover:bg-slate-200"
+                }`}
+                onClick={togglePrototype2}
+              >
+                {!showPrototype2 ? <p className="font-bold">Show FINAL Prototype</p> : <p className="text-white">CLOSE</p>}
+              </button>
+         </div>
+          {showPrototype2 && (
+            <div className="text-center">
+              <img src={finalProto1} className="mt-8 mx-auto w-full" />
+              <img src={finalProto2} className="mt-5 mx-auto" />
+              <img src={finalProto3} className="mt-5 mx-auto" />
+              <img src={finalProto4} className="mt-5 mx-auto" />
+              <img src={finalProto5} className="mt-5 mx-auto" />
+            </div>
+          )}
+        </div>
+        
+
+
       <div className="md:mt-10 xs:mt-10">
         {/*LESSONS LEARNED SECTION*/}
         <h2 className="text-2xl font-bold text-white md:inline">
@@ -443,7 +513,9 @@ const SDG1 = () => {
             users were. The application that our group has agreed upon is all
             about tracking our daily intake of calories, which can help a person
             be healthier because he or she will now know how many calories he or
-            she takes on a daily basis.
+            she takes on a daily basis. We, as a group, also learned about how much
+            feedback can affect the entire process. With other people's feedback, we get to see 
+            certain perspectives that we had not seen before.
             <br />
             <br /> The challenges in our group started when we made our
             personas, because it takes a lot of brainstorming sessions to decide
